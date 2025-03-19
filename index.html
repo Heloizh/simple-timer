@@ -9,24 +9,36 @@
   <body>
     <main>
       <header>
-        <span>Hours</span><span>Minutes</span><span>Seconds</span>
+        <span
+          >Hours<select id="hourSelect"></select>
+          </select></span
+        ><span
+          >Minutes<select id="minuteSelect">
+        </select></span
+        ><span
+          >Seconds<select id="secondSelect"
+          ></select
+        ></span>
       </header>
       <section>
-        <div class="cards" id="hours">
-          <p>00</p>
+        <div class="cards">
+          <p id="hours">00</p>
         </div>
         <aside>:</aside>
-        <div class="cards" id="minutes">
-          <p>00</p>
+        <div class="cards">
+          <p id="minutes">00</p>
         </div>
         <aside>:</aside>
-        <div class="cards" id="seconds">
-          <p>00</p>
+        <div class="cards">
+          <p id="seconds">00</p>
         </div>
       </section>
       <nav>
-        <button>Pause</button><button>Start</button><button>Reset</button>
+        <button onclick="stopTimer()">Pause</button
+        ><button onclick="startTimer()">Start</button
+        ><button onclick="resetTimer()">Reset</button>
       </nav>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
